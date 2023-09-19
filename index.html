@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .header{
+            width: 100%;
+        }
+
+        .nav{
+            display: flex;
+            /* width: 100%; */
+            align-items: center;
+            padding: 0px 50px;
+            background-color:white;
+            justify-content: space-between;
+            position: sticky ;
+        }
+       
+        .header {
+         position: sticky;
+         top: 0;
+            }
+        .nav ul li {
+             padding: 20px;
+            /* background-color: aqua; */
+            display: inline-block;  
+            color: black;
+            font-family: sans-serif;
+            font-size: large;
+            font-weight: 100; 
+        }
+
+        nav li a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: #FF912D;
+        }
+
+        .container{
+            padding: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: #FAF7F2;
+            /* overflow-y: scroll; */
+            /* display: inline; */
+        }
+        .up .main-carousel{
+            
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            height: 300px;
+        }
+
+        .imgup{
+            margin: 20px;
+            transition: 0.5s;
+        }
+
+        .imgup:hover{
+            transform: scale(1.1);
+        }
+
+        .middle{
+            padding: 10px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        select{
+            width: 200px;
+            height: 30px;
+        }
+
+        .footer{
+           background-color: black;
+           display: block;
+           color:white;
+           font-family: sans-serif;
+           
+        }
+
+        .f1{
+            width: 300px;   
+        }
+
+         .f1 li{
+            list-style: none;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+
+        .foot2{
+            display: flex;
+            background-color: #0B0B0B;
+            justify-content: space-between;
+        }
+
+        .foot2 ul li{
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .foot2 li a{
+            color: white;
+        }
+           
+    </style>
+    <!-- <script src="sticky.js"></script> -->
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+        <img src="download.png" alt="" class="logo">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="signup.html">sign up</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="">home</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="container">
+        <div class="up ">
+            <div class="main-carousel">
+            <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+            <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+            <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+            <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+            <!-- <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+              -->
+            </div>
+        </div>
+        <div class="middle" style="margin: 20px;">
+                <select name="" id="" style="width: 215px;">
+                    <option value="">filter</option>
+                    <option value="">filter</option>
+                    <option value="">filter</option>
+                </select>
+            <input type="text" placeholder="search tile" style="width: 650px;">
+            <select style="width: 215px;">
+                <option value="">filter</option>
+                <option value="">filter</option>
+                <option value="">filter</option>
+            </select>
+        </div>  
+        <div class="down" style="margin: 10px 150px; margin-top: 0px; display: flex;">
+            <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px; margin:10px;">
+               <div > <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                </div>
+            </div>
+
+            <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px;margin:10px;">
+                <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                 <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                 </div>
+             </div>
+
+             <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px;margin:10px;">
+                <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                 <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                 </div>
+             </div>
+
+             <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px;margin:10px;">
+                <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                 <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                 </div>
+
+                </div>            
+        </div>
+        <div class="down" style="margin: 10px 150px; display: flex;">
+             
+            <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px; margin: 10px;">
+               <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                </div>
+            </div>
+
+            <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px; margin:10px;">
+               <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                </div>
+            </div>
+
+            <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px; margin:10px;">
+                <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                 <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                 </div>
+             </div>
+ 
+             <div class="cardview" style="height: 300px; width: 300px; border: 1px solid black; border-radius: 1px; margin:10px;">
+                <div> <img src="food-delivery-service-fast-food-delivery-scooter-delivery-service-illustration_67394-869.avif" style="height: 150px; width: 100%;" alt=""> </div>
+                 <div style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia temporibus sed exercitationem enim iste, provident deserunt eaque quis sint, deleniti atque, laborum ipsa? Nemo asperiores beatae quos error non.
+                 </div>
+             </div>
+
+           </div>
+    </div>
+    <div class="footer" >
+        <div class="foot" style="display: flex; margin: 0px 150px;">
+            <div class="f1">
+                <div style="padding: 50px; align-items:first baseline;"><h1 style=" color:#FF912D;">DigiMart</h1></div>
+                 <div>
+                    <p  style="padding: 0px 20px;">We are the leading IT and digital services company in USA. With over 13+ years of experience and having completed 7000+ projects, we have been successful in working with Fortune 500 customers belonging to various industry verticals.
+                    </p>
+                </div> 
+
+            </div>
+        
+            <div class="f1">
+                <div style="padding: 50px; align-items:first baseline;"><h1>Product</h1></div>
+                <div>
+                     <ul style="padding: 0px 20px;">
+                        <li>Download</li>
+                        <li>100+ feature</li>
+                        <li>review</li>
+                        <li>Blog</li>
+                     </ul>
+            
+                 </div> 
+            </div>
+        
+            <div class="f1">
+                <div style="padding: 50px; align-items:first baseline;"><h1>Contact</h1></div>
+                <div>
+                    <ul style="padding: 0px 20px;">
+                        <li>245, Ashok Nagar Road, Opp Datta Mandir, Kanjurmarg , Mumbai-400042</li>
+                        <li>+91 9867567845</li>
+                        <li>rahul25@gmail.com</li>
+                        
+                     </ul>
+                </div> 
+            </div>
+       
+            <div class="f1">
+                <div style="padding: 50px; align-items:first baseline;"><h1>Others</h1></div>
+                <div>
+                    <ul style="padding: 0px 20px;">
+                        <li>FAQ</li>
+                        <li>Tearms of use</li>
+                        <li>Privacy Policy</li>
+                        <li>Liecence Agreement</li>
+                        <li>About us </li>
+                        <li>Parteners</li>
+                        <li>Contact support</li>
+                     </ul>
+                </div> 
+            </div>
+    
+        </div>
+        <div class="foot2">
+           <ul style="padding: 0px 0px 0px 150px;">
+                <li><a href="">youtube</a> </li>
+                <li><a href="">facebook</a> </li>
+                <li><a href="">Twitter</a> </li>
+                <li><a href="">Pintrest</a> </li>
+            </ul>
+            <p style="padding: 20px 150px 20px 0px;">@2022 All Rights Reserved.Developed by DIGIMART </p>
+        </div>
+        
+</div>
+</body>
+<script>const nav = document.querySelector('.header');
+    const offset = nav.getBoundingClientRect();
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > offset.top) {
+        nav.style.position = 'fixed';
+        nav.style.top = 0;
+      } else {
+        nav.style.position = 'relative';
+        nav.style.top = '';
+      }
+    })
+    
+//     const elem = document.querySelector(".main-carousel")
+// const flkty = new Flickity(elem, {
+//   // options
+//   cellAlign: "left",
+//   freeScroll: true,
+//   contain: true,
+//   draggable: true,
+//   prevNextButtons: false,
+//   pageDots: false,
+//   autoPlay: 4000,
+//   pauseAutoPlayOnHover: true,
+//   groupCells: 1,
+// });</script>
+</html>
