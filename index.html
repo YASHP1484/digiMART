@@ -5,192 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-       body{
-        background-color: #faf7f2;
-       }
-        .container {
-            padding: 0 0 10px;
-        }
-
-        nav {
-            margin-top: 0px;
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 0px 50px;
-            background-color: white;
-            justify-content: space-between;
-            position: sticky;
-        }
-
-        .nav {
-            position: sticky;
-            top: 0;
-        }
-
-        nav ul li {
-            margin: 10px 20px;
-            display: inline-block;
-            list-style: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-size: 18px;
-            position: relative;
-        }
-
-        nav .fas {
-            display: none;
-        }
-
-        nav ul li a::after {
-            content: "";
-            width: 0;
-            height: 3px;
-            background-color: #ff912d;
-            position: absolute;
-            left: 0px;
-            bottom: -6px;
-            transition: 0.5s;
-        }
-
-        nav ul li a:hover::after {
-            width: 100%;
-        }
-
-        .cards {
-            display: flex;
-            flex-direction: row;
-            padding: 10px 100px;
-            width: 100%;
-            background-color: black;
-            justify-content: center;
-            height: 300px;
-        }
-
-
-        .imgup {
-            margin: 20px;
-            flex-wrap: wrap;
-            transition: 0.5s;
-        }
-
-        .imgup:hover {
-            transform: scale(1.1);
-        }
-
-        .filters {
-            margin: 15px 8%;
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        .filters li {
-            list-style: none;   
-        }
-
-        .filters li:nth-child(2) {
-            flex-basis: 60%;
-        }
-
-        .filters li input {
-            width: 100%;
-            height: 100%;
-        }
-
-        .card-main {
-            margin: 10px 8%;
-            margin-top: 0px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .cardview {
-            height: 300px;
-            width: 300px;
-            border: 1px solid black;
-            border-radius: 1px;
-            margin:15px auto;
-            transition: 0.5s;
-        }
-
-        .card-img{
-            height: 150px; 
-            width: 100%;
-           
-        }
-
-        .cardview:hover{
-            transform: scale(1.1);
-        }
-
-        select {
-            width: 200px;
-            height: 30px;
-        }
-
-        .footer {
-            margin: 10px 5%;
-            display: block;
-            color: white;
-            font-family: sans-serif;
-
-        }
-
-        .foot-1{
-            display: flex; 
-            background-color: black;
-            color: white;
-        }
-
-        .f1 {
-            width: 100%;
-            display: flex;
-            flex-direction:column;
-        }
-
-        .f1 h1{
-            padding: 50px; 
-        }
-
-        .f1 ul{
-            padding: 0px 20px;        
-        }
-
-        .f1 li {
-            list-style: none;
-            margin:10px;
-            padding-left: 20px;
-            cursor: pointer;
-        }
-        
-        .foot-2 {
-            display: flex;
-            background-color: #0B0B0B;
-            justify-content: space-between;
-        }
-
-        .foot-2 ul li {
-            padding: 20px;
-            display: inline-block;
-        }
-
-        .foot-2 li a {
-            color: white;
-        }
-
-       
-    </style>
     <!-- <script src="sticky.js"></script> -->
 </head>
 
@@ -216,8 +32,8 @@
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
-                <!-- <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
-              -->
+                <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
+             
             </div>
         </div>
     </div>
@@ -381,7 +197,7 @@
     </div>
     </div>
 </body>
-<!-- <script>const nav = document.querySelector('.header');
+<script>const nav = document.querySelector('nav');
     const offset = nav.getBoundingClientRect();
 
     window.addEventListener('scroll', function () {
@@ -406,6 +222,6 @@
     //   autoPlay: 4000,
     //   pauseAutoPlayOnHover: true,
     //   groupCells: 1,
-    // });</script> -->
+    // });</script>
 
 </html>
