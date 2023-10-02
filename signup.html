@@ -1,238 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-color: #FAF7F2;
-            background: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.05));
-        }
-
-        .header{
-            display: flex;
-            align-items: center;
-            padding: 0px 50px;
-            justify-content: space-between;
-            background-color: white;
-            
-        }
-
-        .container{
-            border: 5px solid white;
-            border-radius: 10px;
-        }
-       
-       .header ul li {
-             padding: 20px;
-            /* background-color: aqua; */
-            display: inline-block;  
-            color: black;
-            font-family: sans-serif;
-            font-size: large;
-            font-weight: 100; 
-        }
-
-        li a{
-            text-decoration: none;
-        }
-
-        a:hover{
-            color: #FF912D;
-        }
-
-        .signuppage{
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: auto;
-            width: 450px;
-            box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
-            border: 1px solid #eee;
-            background-color: white;
-        }
-
-        .heading{
-           text-align: center;
-           font-family: sans-serif;
-           color: #FF912D;
-           padding: 20px;
-        }
-
-        .contain{
-            padding: 20px;
-        }
-
-        .group{
-            margin: 20px;
-        }
-        
-        .l2{
-            display: block;
-            /* padding: 10px; */
-            font-size: medium;
-            font-family: sans-serif;
-        }
-
-        .l1{
-            padding: 10px;
-            width: 100%;
-            border: 1px solid #FDC38D;
-        }
-
-        button{
-            float: right;
-            /* padding: 20px; */
-        }
-
-
-        .footer{
-           background-color: black;
-           display: block;
-           color:white;
-           font-family: sans-serif;  
-        }
-        .f1{
-            width: 300px;   
-        }
-
-         .f1 li{
-            list-style: none;
-            margin: 10px;
-        }
-
-
-        .foot2{
-            display: flex;
-            background-color: #0B0B0B;
-            justify-content: space-between;
-        }
-
-        .foot2 ul li{
-            padding: 20px;
-            display: inline-block;
-        }
-
-        .foot2 li a{
-            color: white;
-        }
-
-      
-        </style>
+    <link rel="stylesheet" href="signup.css">
+    <script
+    src="https://kit.fontawesome.com/b5e0d0c39b.js"
+    crossorigin="anonymous"
+  ></script>
+ 
 </head>
+
 <body>
-        <div class="header">
-            <img src="download.png" alt="" class="logo">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="signup.html">signup</a></li>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="">home</a></li>
-            </ul>
-        </div>
-    <div class="container"> 
-        <div class="signuppage">
-         <div class="heading"><h1>DigiMart</h1></div>
-         <div class="contain">
-            <div class="group">
-            <label class="l2" for="">name</label>
-            <input class="l1" type="text" name="" value="" placeholder="Enter your full name">
-        </div>
+    <div id="header">
+        <div class="container">
+            <header>
+            <img src="download.png" alt="" class="logo" onclick="logo()">
+            <nav>
+                
+                <ul id="dropdownmenu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="signup.html">signup</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="">home</a></li>
+                    <i class="fas fa-times" id="icon-2" onclick="closemenu()"></i>
+                </ul>
 
-        <div class="group">
-            <label class ="l2">Email</label>
-            <input class="l1" type="email" name="" value="" placeholder="Enter your Email">
-        </div>
-
-        <div class="group">
-            <label class="l2" for="">Password</label>
-            <input class="l1" type="password" name="" value="" placeholder="Enter your Password">
-        </div>
-        <div class="group">
-            <label class="l2" for="">Contact No.</label>
-            <input class="l1" type="number" name="" value="" placeholder="Enter your Contact number">
-        </div>
-
-        <div class="group" >
-                <label  for="" style="padding: 0px 30px 0px 0px;">Gender</label>
-                <input type="radio" name="Gender" id="" value="male" >male
-                <input type="radio" name="Gender" id="" value="female">female                    
-            </div>
-
-            <div class="group">
-                <label  for="" style="padding: 0px 30px 0px 0px;">photo</label>
-                <input type="file" name="" id="">
-                 
-            </div>
-
-            <div class="group">
-                <label class="l2" for="">Address</label>
-               <textarea class="l1" rows="5" cols="50"></textarea>
-            </div>
-
-            <div class="group">
-                <label class="l2" for="">website</label>
-                <input class="l1" type="text" name="" value="" placeholder="Enter your Website">
-            </div>
-
-            <div style="padding: 20px;">
-            <input type="button" value="sign up" style="border: 1px solid black; padding: 10px; background-color: #FF912D;" class="l1">
-            </div>
-            
-            
-
-        </div>
-         </div>
-
+                <i class="fas fa-bars" id="icon-1" onclick="openmenu()"></i>
+            </nav>
+            </header>
         </div>
     </div>
-    <div class="footer" >
-        <div class="foot" style="display: flex; margin: 0px 150px;">
-            <div class="f1">
-                <div style="padding: 50px; align-items:first baseline;"><h1 style=" color:#FF912D;">DigiMart</h1></div>
-                 <div>
-                    <p  style="padding: 0px 20px;">We are the leading IT and digital services company in USA. With over 13+ years of experience and having completed 7000+ projects, we have been successful in working with Fortune 500 customers belonging to various industry verticals.
-                    </p>
-                </div> 
+    <main>
+    <div id="signup">
+        <div class="container">   
+                <form action="" name="">
+                <h1>DigiMart</h1>
+                        <h3>name</h3>
+                        <input class="l1" type="text" name="name" value="" placeholder="Enter your full name" required>
 
-            </div>
-        
+                       <h3>Email</h3>
+                        <input class="l1" type="email" name="email" value="" placeholder="Enter your Email" required>
+                   
+                       <h3>Password</h3>
+                        <input class="l1" type="password" name="password" value="" placeholder="Enter your Password" required>
+                
+                       <h3>Contact No</h3>
+                        <input class="l1" type="number" name="contactno" value="" placeholder="Enter your Contact number"
+                            required>
+
+                    <p>
+                       <h3>Gender</h3>
+                        <input type="radio" name="Gender" id="" value="male">male
+                        <input type="radio" name="Gender" id="" value="female">female
+                    </p>
+                    <p>
+                        <h3>Photo</h3><input class="" type="file" name="photo" id="">
+                    </p>
+
+                        <h3>Address</h3>
+                        <textarea class="l1" rows="5" cols="50" name="address"></textarea>
+
+                       <h3>DomainName</h3>
+                        <input class="l1" type="text" name="domainname" value="" placeholder="Enter your Website">
+
+                        <button type="submit">submit</button>
+                    </form> 
+                    </div>
+                </div>
+    
+    <div id="footer">
+        <div class="container">
+        <div class="foot-1" >
             <div class="f1">
-                <div style="padding: 50px; align-items:first baseline;"><h1>Product</h1></div>
-                <div>
-                     <ul style="padding: 0px 20px;">
+                    <h1 style=" color:#FF912D;">DigiMart</h1>
+            
+                    <p style="padding: 0px 20px;">We are the leading IT and digital services company in USA. With over
+                        13+ years of experience and having completed 7000+ projects, we have been successful in working
+                        with Fortune 500 customers belonging to various industry verticals.
+                    </p>
+            </div>
+
+            <div class="f1">
+                    <h1>Product</h1>
+                    <ul>
                         <li>Download</li>
                         <li>100+ feature</li>
                         <li>review</li>
                         <li>Blog</li>
-                     </ul>
-            
-                 </div> 
+                    </ul>
             </div>
-        
+
             <div class="f1">
-                <div style="padding: 50px; align-items:first baseline;"><h1>Contact</h1></div>
-                <div>
+                    <h1>Contact</h1>
                     <ul style="padding: 0px 20px;">
                         <li>245, Ashok Nagar Road, Opp Datta Mandir, Kanjurmarg , Mumbai-400042</li>
                         <li>+91 9867567845</li>
                         <li>rahul25@gmail.com</li>
-                        
-                     </ul>
-                </div> 
+                    </ul>
             </div>
-       
+
             <div class="f1">
-                <div style="padding: 50px; align-items:first baseline;"><h1>Others</h1></div>
-                <div>
-                    <ul style="padding: 0px 20px;">
+                    <h1>Others</h1>
+                    <ul >
                         <li>FAQ</li>
                         <li>Tearms of use</li>
                         <li>Privacy Policy</li>
@@ -240,13 +112,11 @@
                         <li>About us </li>
                         <li>Parteners</li>
                         <li>Contact support</li>
-                     </ul>
-                </div> 
+                    </ul>
             </div>
-    
         </div>
-        <div class="foot2">
-           <ul style="padding: 0px 0px 0px 150px;">
+        <div class="foot-2">
+            <ul style="padding: 0px 0px 0px 150px;">
                 <li><a href="">youtube</a> </li>
                 <li><a href="">facebook</a> </li>
                 <li><a href="">Twitter</a> </li>
@@ -254,7 +124,30 @@
             </ul>
             <p style="padding: 20px 150px 20px 0px;">@2022 All Rights Reserved.Developed by DIGIMART </p>
         </div>
-        
-</div>
+    </div>
+    </div>
+    </main>
 </body>
+
+
+  <script>
+    var header = document.getElementById("icon-1");
+    var header2 = document.getElementById("icon-2");
+     var dropdownmenu = document.getElementById("dropdownmenu");
+
+    function openmenu(){
+       dropdownmenu.style.top= "50px";
+      //  header.style.display="none";
+     }
+
+     function closemenu(){
+       dropdownmenu.style.top = "-360px";
+      //  header2.style.display="none";
+     }
+
+     function logo(){
+      window.open("index.html");
+     }
+  </script>
+
 </html>

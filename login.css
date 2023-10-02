@@ -6,8 +6,18 @@
 body {
   background-color: #faf7f2;
 }
-.container{
-  padding: 0;
+
+main{
+        height: calc(100vh - 70px);
+        overflow-y: scroll;
+}
+header{
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 nav {
   display: flex;
@@ -17,10 +27,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
  }
-nav img {
-  margin: 5px 10px;
-  left: 0;
-}
+
 nav ul li {
   margin: 10px 20px;
   display: inline-block;
@@ -114,10 +121,14 @@ nav ul li a:hover::after {
 {
     color: #fdc38d;
 }
+header{
+  background-color: #ff912d;
+}
 nav {
+  padding: 5px;
+  background: #ff912d;
     display: flex;
     flex-direction: row;
-    background-color: #ff912d;
     width: 100%;
     height: 60px;
     justify-content: start;
@@ -134,7 +145,7 @@ nav ul {
     padding-top: 20px;
     transition: 0.5s;
     border-radius: 5px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 nav ul li {
     display: block;
@@ -150,7 +161,8 @@ nav ul li a {
 
 .logo
 {
-    top: 0px;
+    left: 5px;
+    position: absolute;
 }
 .loginPanel{
     display: flex;

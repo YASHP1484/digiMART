@@ -14,8 +14,9 @@
   <body>
     <div id="header">
       <div class="container">
+        <header>
+        <img src="download.png" alt="" class="logo" onclick="logo()">
         <nav>
-          <img src="download.png" alt="" class="logo" onclick="logo()">
           <ul id="dropdownmenu">
             <li><a href="index.html">home</a></li>
             <li><a href="signup.html">signup</a></li>
@@ -26,9 +27,11 @@
          
           <i class="fas fa-bars" id="icon-1" onclick="openmenu()"></i>
         </nav>
+      </header>
       </div>
     </div>
-    <div id="main"></div>
+<main>
+    <div id="login">
     <div class="container">
       <div class="loginPanel">
         <div class="heading">
@@ -43,6 +46,7 @@
               name=""
               id=""
               placeholder="Enter your Number"
+              required
             />
           </div>
 
@@ -54,6 +58,7 @@
               name=""
               id=""
               placeholder="enter your password"
+              required
             />
           </div>
 
@@ -65,13 +70,7 @@
               style="text-align: center; margin-top: 20px; float: right"
               >forgot your password?</a
             >
-            <input
-            class="in btn-log"
-            type="button"
-            name=""
-            value="LogIn"
-           
-          />
+           <button class="in btn-log">Log In</button>
           </div>
         </div>
         <div class="loginOption">
@@ -82,16 +81,13 @@
           </div>
           <p class="link or" style="text-align: center; padding: 10px; font-size: large">or</p>
           <div class="link">
-            <input
-              type="button"
-              name=""
-              class="btn-submit"
-              value="Log in with Google"
-            />
+            <button class="btn-submit">log in with google</button>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    </main>
   </body>
   <script>
     var header = document.getElementById("icon-1");
@@ -99,7 +95,7 @@
      var dropdownmenu = document.getElementById("dropdownmenu");
 
     function openmenu(){
-       dropdownmenu.style.top= "0px";
+       dropdownmenu.style.top= "50px";
       //  header.style.display="none";
      }
 

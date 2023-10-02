@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #faf7f2;
+  }
+
+main{
+        height: calc(100vh - 70px);
+        overflow-y: scroll;
+}
+header{
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+  
+  nav ul li {
+    margin: 10px 20px;
+    display: inline-block;
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav .fas{
+    display: none;
+  }
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #ff912d;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  nav .fas{
+    display: none;
+  }
+
+form{
+    margin: 50px auto;
+    padding: 20px;
+    width: 450px;
+    height: 100%;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+    border: 1px solid #eee;
+    background-color: white;
+}
+
+h1{
+   text-align: center;
+   font-family: sans-serif;
+   color: #FF912D;
+   padding: 20px;
+}
+
+h3{ 
+    margin: 10px auto 0;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.l1{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #FDC38D;
+    outline: none;
+}
+
+button{
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #FF912D;
+  outline: none;
+  border:none;
+    /* padding: 20px; */
+}
+
+.photo{
+  display: flex;
+}
+
+
+#footer{ 
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+}
+.foot-1{
+    padding: 10px 10%;
+    display: flex; 
+    background-color: black;    
+}
+.f1 {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.f1 h1{
+    padding: 50px; 
+}
+.f1 ul{
+    padding: 0px 20px;        
+}
+.f1 ul li {
+    list-style: none;
+    margin:10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.foot-2 {
+    display: flex;
+    background-color: #0B0B0B;
+    justify-content: space-between;
+}
+.foot-2 ul li {
+    padding: 20px;
+    display: inline-block;
+}
+.foot-2 li a {
+    color: white;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+      padding: 0px;
+  }nav .fas {
+      display: block;
+      font-size: 25px;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      align-items: center;
+  }
+  header{
+    background-color: #ff912d;
+  }
+  #icon-2:hover{
+      color: #ff912d;
+  }
+  #icon-1:hover
+  {
+      color: #fdc38d;
+  }
+  nav {
+    padding: 5px;
+    background: #ff912d;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 60px;
+      justify-content: start;
+  }
+  nav ul {
+      background: #ff912d;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -360px;
+      width: 100%;
+      height: 300px;
+      padding-top: 20px;
+      transition: 0.5s;
+      border-radius: 5px;
+      /* margin-top: 5px; */
+  }
+  nav ul li {
+      display: block;
+      margin: 20px 25px;
+  }
+  nav ul:hover{
+      background: rgb(244, 206, 135);
+  }
+  nav ul li a {
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .logo
+  {
+    left: 5px;
+    position: absolute;
+  }
+  .loginPanel{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 1;
+      width: 100%;
+  }
+  .contain{
+      display: flex;
+      flex-direction: column;  
+  }
+  .form-control{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-basis: 1;
+  }
+  .in{
+      flex-basis: 70%;
+      
+  }
+  .lab{
+      flex-basis: 20%;
+      margin-right:10%;
+  }
+  .btn-log{
+        flex-basis: 30%;
+  }
+  
+  .in:hover{
+      color: orange;
+      background-color: transparent;
+      background: transparent;
+  }
+  
+  .btn-submit:hover{
+      background: transparent;
+  
+  }
+  
+  .reset-link{
+      flex-basis: 40%;
+      margin-left: 0;
+      font-size: 16px;
+      text-decoration: none;
+  }
+  
+  .loginOption{
+      display: flex;
+      flex-direction: column;
+  }
+  .link-1{
+      display: flex;
+      align-items: center;
+  }
+  
+  .link-1 h5{
+      margin-right: 10px;
+  }   
+  }

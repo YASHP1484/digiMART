@@ -7,29 +7,39 @@
 body{
         background-color: #faf7f2;
        }
+
+main{
+        height: calc(100vh - 70px);
+        overflow-y: scroll;
+}
 /* .container{
          
 } */
-
-#header{
+/* #header{
             border-bottom:none;
             outline: none;
             box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);   
-        }
-nav{
-            margin-top: 0px;
+        } */
+header{
             display: flex;
-            width: 100%;
             align-items: center;
-            padding: 5px 50px;  
+            padding: 0px 50px;
+            background-color: white;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom:none;
+            outline: none;
+            box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);   
+          }
+nav{
+            display: flex;
+            align-items: center;
+            padding: 0px;  
             background-color: white;
             justify-content:space-between;
-            position: sticky;
+           
         }
-nav {
-            position: sticky;
-            top: 0;
-        }
+
 nav ul li {
             margin: 10px 20px;
             display: inline-block;
@@ -57,6 +67,10 @@ nav ul li a::after {
 nav ul li a:hover::after {
             width: 100%;
 }
+
+.scrollx{
+    background:black ;
+}
 .cards{
             display: flex;
             flex-direction: row;
@@ -64,11 +78,14 @@ nav ul li a:hover::after {
             background-color: black;
             justify-content: center;
             height: 300px;
+            overflow-x:scroll;
+            
  }
 .imgup{
             margin: 20px;
             flex-wrap: wrap;
             transition: 0.5s;
+            overflow-y: scroll;
 }
 .imgup:hover{
             transform: scale(1.1);
@@ -76,16 +93,19 @@ nav ul li a:hover::after {
 
 .filters {
             margin: 15px 8%;
-            display: flex;
+            display:grid;
+            column-gap:20px;
+            grid-template-columns: auto auto auto ;
             justify-content: space-around;
 }
 
 .filters li {
-            list-style: none;       
+            list-style: none;
+                 
 }
-.filters li:nth-child(2) {
-            flex-basis: 50%;
-}
+/* .searchtile {
+          grid-column: 2/3;
+} */
 .filters li input {
             padding: 0 5px;
             width: 100%;
@@ -116,14 +136,16 @@ select {
             outline: none;
             box-shadow: -1px -1px 2px rgb(0 0 0 / 10%), 1px 1px 2px rgb(0 0 0 / 10%);   
             margin:15px auto;
-            transition: 0.5s;
+            transition: background 0.5s,transform 0.5s ;
+}
+
+.cardview:hover{
+    background: #ff912d;
+    transform: translateY(-10px);
 }
 .card-img{
             height: 150px; 
             width: 100%;    
-}
-.cardview:hover{
-            transform: scale(1.1);
 }
 
 .cardview {
@@ -168,6 +190,77 @@ select {
 }
 .foot-2 li a {
             color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 0px;
+    }
+    header{
+        background: #ff912d;
+    }
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        align-items: center;
+    }
+    #icon-2:hover{
+        color: #ff912d;
+    }
+    #icon-1:hover
+    {
+        color: #fdc38d;
+    }
+    nav {
+       padding: 5px;
+  background: #ff912d;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    justify-content: start;
+    }
+    nav ul {
+        background: #ff912d;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: -360px;
+        width: 100%;
+        height: 300px;
+        padding-top: 20px;
+        transition: 0.5s;
+        border-radius: 5px;
+        /* margin-top: 5px; */
+    }
+    nav ul li {
+        display: block;
+        margin: 20px 25px;
+    }
+    nav ul:hover{
+        background: rgb(244, 206, 135);
+    }
+    nav ul li a {
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo
+    {
+        left: 5px;
+        position: absolute;
+    }
+/* 
+    .filters{
+        display: grid;
+        grid-template-rows: auto;
+        grid-row: 2/3;
+    } */
+
 }
 
        

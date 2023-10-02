@@ -6,40 +6,50 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-
-    <!-- <script src="sticky.js"></script> -->
+    <script
+    src="https://kit.fontawesome.com/b5e0d0c39b.js"
+    crossorigin="anonymous"
+  ></script>
+ 
 </head>
 
 <body>
+    
     <div id="header">
         <div class="container">
-            <nav><img src="download.png" alt="" class="logo">
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="signup.html">sign up</a></li>
-                    <li><a href="login.html">Log In</a></li>
-                    <li><a href="">home</a></li>
-                    <i class="fas fa-times" id="icon-2" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" id="icon-1" onclick="openmenu()"></i>
-            </nav>
+            <header>
+            <img src="download.png" alt="" class="logo" onclick="logo()">
+          <nav>
+            <ul id="dropdownmenu">
+              <li><a href="index.html">home</a></li>
+              <li><a href="signup.html">signup</a></li>
+              <li><a href="login.html">Log In</a></li>
+              <li><a href="">home</a></li>
+              <i class="fas fa-times" id="icon-2" onclick="closemenu()"></i>
+            </ul>
+           
+            <i class="fas fa-bars" id="icon-1" onclick="openmenu()"></i>
+          </nav>
+        </header>
         </div>
-    </div>
+      </div>
+    <main>
     <div id="hero-sec">
         <div class="container">
+            <div class="scrollx">
             <div class="cards">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
                 <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
-                <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt=""> 
-             
+                <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">
+                <img src="food-menu-restaurant-social-media-banner-template_120329-1748.avif" class="imgup" alt="">      
+            </div>
             </div>
         </div>
     </div>
 
     <div id="middle">
-        
             <ul class="filters">
                 <li>
                     <select name="" id="">
@@ -48,8 +58,8 @@
                         <option value="">filter</option>
                     </select>
                 </li>
-                <li>
-                    <input type="text" placeholder="search tile">
+                <li class="searchtile">
+                    <input type="text"  placeholder="search tile">
                 </li>
                 <li>
                     <select>
@@ -60,7 +70,6 @@
                 </li>
             </ul>
         </div>
-    </div>
 
     <div id="down">
         <div class="container">
@@ -196,32 +205,27 @@
         </div>
     </div>
     </div>
+
+</main>
 </body>
-<script>const nav = document.querySelector('nav');
-    const offset = nav.getBoundingClientRect();
-
-    window.addEventListener('scroll', function () {
-        if (window.pageYOffset > offset.top) {
-            nav.style.position = 'fixed';
-            nav.style.top = 0;
-        } else {
-            nav.style.position = 'relative';
-            nav.style.top = '';
-        }
-    })
-
-    //     const elem = document.querySelector(".main-carousel")
-    // const flkty = new Flickity(elem, {
-    //   // options
-    //   cellAlign: "left",
-    //   freeScroll: true,
-    //   contain: true,
-    //   draggable: true,
-    //   prevNextButtons: false,
-    //   pageDots: false,
-    //   autoPlay: 4000,
-    //   pauseAutoPlayOnHover: true,
-    //   groupCells: 1,
-    // });</script>
+    <script>
+        var header = document.getElementById("icon-1");
+        var header2 = document.getElementById("icon-2");
+         var dropdownmenu = document.getElementById("dropdownmenu");
+    
+        function openmenu(){
+           dropdownmenu.style.top= "170px";
+          //  header.style.display="none";
+         }
+    
+         function closemenu(){
+           dropdownmenu.style.top = "-360px";
+          //  header2.style.display="none";
+         }
+    
+         function logo(){
+          window.open("index.html");
+         }
+      </script>
 
 </html>
